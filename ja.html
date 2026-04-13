@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
 <head>
- <meta charset="utf-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="main.css" />
   <title>Portfolio</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <span class="align-items-center display-4">Saito Jishun </span>
+    <span class="align-items-center display-4">Saito Jishun</span>
   </header>
+
   <p style="text-align: right; padding-right: 2em;">
-    <a href="ja.html">日本語</a><a href="en.html">English</a> <a href="zh-ch.html">中文</a>
+    <a href="ja.html">日本語</a>
+    <a href="en.html">English</a>
+    <a href="zh-ch.html">中文</a>
     <br>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdW2uppT_-WnyIjJes8muZi4FgrGW2gernVLHDOlo04ZW4tSQ/viewform?usp=link"
-      class="btn btn-primary">
+      class="btn btn-primary mt-2">
       Contact Me
     </a>
   </p>
 
-  <div class="container">
+  <main class="container flex-grow-1">
 
     <h2>学歴</h2>
     <ul class="list-group">
       <li class="list-group-item">
-        法政大学 情報科学部 ディジタルメディア学科 [2022/04～2026/03 見込]
+        東京都立杉並高等学校 [2019/04～2022/03]
+      </li>
+      <li class="list-group-item">
+        法政大学 情報科学部 ディジタルメディア学科 [2022/04～2026/03]
+      </li>
+      <li class="list-group-item">
+        法政大学大学院 情報科学研究科 [2026/04～2028/03 見込]
       </li>
     </ul>
+
     <br />
+
     <h2>保有資格</h2>
     <ul class="list-group">
-      <li class="list-group-item">
       <li class="list-group-item">
         TOEIC 605 点 (Listening: 310, Reading: 295) 取得年月: 2024/10
       </li>
@@ -41,58 +53,175 @@
         普通自動車第一種運転免許AT限定 取得年月: 2022/05
       </li>
     </ul>
-    <hr />
-    <h2>成果物</h2>
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem">
-          <img src="./thumbnail.gif" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">返せ！宗教勧誘</h5>
-            <p class="card-text">
-            </p>
-            <a href="#heading-3drender" class="btn btn-primary">詳細</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem">
-          <img src="./catwalk_title.gif" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">catwalk</h5>
-            <p class="card-text">
-            </p>
-            <a href="#heading-webportfolio" class="btn btn-primary">詳細</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem">
-          <img src="./book_search.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Open Library APIを使用した書籍検索ページ</h5>
-            <p class="card-text">
-            </p>
-            <a href="#heading-webportfolio" class="btn btn-primary">詳細</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-  <footer class="footer" style="
-        position: absolute;
-        width: 100%;
-        height: 60px;
-        background-color: #f5f5f5;
-      ">
+    <br />
+
+    <h2>学会・活動実績</h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        バレーボール部に所属し，中学から現在まで活動継続中．大学2年時に関東理工系大学リーグ2部から1部への昇格に貢献．
+  　　　 3年時には1部リーグの全ての試合に出場し，優勝を2度達成．
+      </li>
+      <li class="list-group-item">
+        裸眼3Dディスプレイを用いたバレーボール観戦映像の視認性向上に関する研究に取り組む．
+        大学はGPA 3.34で卒業し，優秀学生賞を受賞
+      </li>
+      <li class="list-group-item">
+       2025.10 立体メディア技術研究会にて発表．学生奨励賞を受賞．
+      </li>
+      <li class="list-group-item">
+       2026.3 サイバースペースと仮想都市研究会にて発表．
+      </li>
+    </ul>
+
+    <hr />
+
+    <h2>成果物</h2>
+    <div class="row g-4">
+
+      <!-- 作品1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="./thumbnail.gif" class="card-img-top" alt="返せ！宗教勧誘のサムネイル" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">返せ！宗教勧誘</h5>
+
+            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#detail-religion" aria-expanded="false" aria-controls="detail-religion">
+              詳細
+            </button>
+
+            <div class="collapse mt-3" id="detail-religion">
+              <div class="card card-body">
+                <p>
+                  大学3年生の時に参加した Unity1Week テーマ「かえす」にて制作したゲームです。<br>
+                  次々にやってくる宗教勧誘のおばさんを殴って土に「かえす」ゲームです。<br>
+                  友人と共同制作し、主に企画、ルール作り、ゲームシステムの開発を担当しました。<br>
+                  この制作を通して、チーム開発の流れや Git の使用法、C# コーディングを身につけました。<br>
+                  コンペ終了後の評価期間では人気のゲームに選ばれ、現在では総プレイヤー数は約2万人を達成し、
+                  実況動画も複数本投稿されています。
+                </p>
+                <p class="mb-0">
+                  <a href="https://unityroom.com/games/return-solitication" target="_blank" rel="noopener noreferrer">
+                    プレイはこちら
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 作品2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="./catwalk_title.gif" class="card-img-top" alt="catwalkのサムネイル" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">catwalk</h5>
+
+            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#detail-catwalk" aria-expanded="false" aria-controls="detail-catwalk">
+              詳細
+            </button>
+
+            <div class="collapse mt-3" id="detail-catwalk">
+              <div class="card card-body">
+                <p>
+                  大学3年生の時に参加した Unity1Week テーマ「ない」にて制作したゲームです。<br>
+                  色がなくなってしまった世界で、猫が色を取り戻すために冒険をするアクションゲームで、
+                  試行数と記憶力が鍵になります。<br>
+                  こちらもコンペ終了時に人気のゲームに選ばれました。
+                </p>
+                <p class="mb-0">
+                  <a href="https://unityroom.com/games/cat-walk" target="_blank" rel="noopener noreferrer">
+                    プレイはこちら
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 作品3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="./book_search.png" class="card-img-top" alt="書籍検索ページのサムネイル" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Open Library APIを使用した書籍検索ページ</h5>
+
+            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#detail-book" aria-expanded="false" aria-controls="detail-book">
+              詳細
+            </button>
+
+            <div class="collapse mt-3" id="detail-book">
+              <div class="card card-body">
+                <p class="mb-0">
+                  Open Library API を用いて書籍検索ができる Web ページを作成しました。<br>
+                  API から取得したデータを画面に表示し、検索機能を実装しています。<br>
+                  また SQL を利用し、検索履歴の機能も実装しました。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 作品4 卒業論文 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="./graduation_thesis.png" class="card-img-top" alt="卒業論文のサムネイル" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">卒業論文</h5>
+
+            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#detail-thesis" aria-expanded="false" aria-controls="detail-thesis">
+              詳細
+            </button>
+
+            <div class="collapse mt-3" id="detail-thesis">
+              <div class="card card-body">
+                <p>
+                  <strong>タイトル</strong><br>
+                  バレーボールの立体映像観戦における視差最適化
+                </p>
+                <p>
+                  <strong>概要</strong><br>
+                  裸眼3Dディスプレイにおけるバレーボール観戦映像の視差最適化手法を提案しました。<br>
+                  バレーボールの観戦映像は、試合全体を把握するためにコートを俯瞰する構図で撮影されることが多く、
+                  奥行き方向のボールの動きが視認しにくいという課題があります。<br>
+                  そこで、撮影段階では眼間距離よりも長い長基線長を設定し、提示段階では顕著性マップに基づく
+                  注視点推定と水平シフトを用いて、注視点付近の視差を抑制しました。<br>
+                  これにより、立体感を維持しながら快適性の向上を目指しました。<br>
+                  提案手法は、視差角の分布、最大視差角、時間変化に基づく定量評価と、
+                  視認性および臨場感に関する主観評価実験により検証しました。
+                </p>
+                <p class="mb-0">
+                  <a href="https://drive.google.com/file/d/1NGFdJgu8mJce0gEvOBoPmHKUx7LsNW_5/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer">
+                    論文を見る
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer mt-5 py-3 bg-light">
     <div class="container">
-      <p class="text-muted">
+      <p class="text-muted mb-0">
         最終更新日:
-        <span id="#lastUpdatedDate"></span>
-        <script src="updatedDate.js"></script>
+        <span id="lastUpdatedDate"></span>
       </p>
     </div>
   </footer>
+
+  <script src="updatedDate.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
