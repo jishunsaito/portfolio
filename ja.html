@@ -4,223 +4,377 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saito Jishun | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="main.css" />
-  <title>Portfolio</title>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f7f9fc 0%, #ffffff 100%);
+      color: #222;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+        "Yu Gothic UI", sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0d6efd 0%, #6ea8fe 100%);
+      color: white;
+      padding: 4rem 0 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .hero .lead {
+      opacity: 0.95;
+    }
+
+    .lang-links a {
+      color: rgba(255, 255, 255, 0.92);
+      text-decoration: none;
+      margin: 0 0.4rem;
+      font-weight: 500;
+    }
+
+    .lang-links a:hover {
+      text-decoration: underline;
+    }
+
+    h2.section-title {
+      font-weight: 800;
+      margin-bottom: 1rem;
+      padding-left: 0.75rem;
+      border-left: 6px solid #0d6efd;
+    }
+
+    .section-block {
+      margin-bottom: 2.5rem;
+    }
+
+    .soft-card {
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+      background: #fff;
+    }
+
+    .list-group-item {
+      border-left: none;
+      border-right: none;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .portfolio-card {
+      border: none;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+    }
+
+    .portfolio-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .collapse .inner-detail {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .badge-custom {
+      font-size: 0.95rem;
+      padding: 0.55rem 0.85rem;
+      border-radius: 999px;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    footer {
+      margin-top: 3rem;
+    }
+
+    .contact-btn {
+      border-radius: 999px;
+      font-weight: 700;
+      padding: 0.7rem 1.4rem;
+    }
+  </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <span class="align-items-center display-4">Saito Jishun</span>
-  </header>
+  <header class="hero">
+    <div class="container text-center">
+      <div class="lang-links mb-3">
+        <a href="ja.html">日本語</a>
+        <a href="en.html">English</a>
+        <a href="zh-ch.html">中文</a>
+      </div>
 
-  <p style="text-align: right; padding-right: 2em;">
-    <a href="ja.html">日本語</a>
-    <a href="en.html">English</a>
-    <a href="zh-ch.html">中文</a>
-    <br>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdW2uppT_-WnyIjJes8muZi4FgrGW2gernVLHDOlo04ZW4tSQ/viewform?usp=link"
-      class="btn btn-primary mt-2">
-      Contact Me
-    </a>
-  </p>
+      <h1 class="display-4 mb-2">Saito Jishun</h1>
+      <p class="lead mb-2">Digital Media / 3D Display / Interactive Content</p>
+      <p class="mb-4">
+        裸眼3Dディスプレイ・スポーツ観戦映像・ゲーム制作に取り組んでいます
+      </p>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdW2uppT_-WnyIjJes8muZi4FgrGW2gernVLHDOlo04ZW4tSQ/viewform?usp=link"
+        class="btn btn-light contact-btn" target="_blank" rel="noopener noreferrer">
+        Contact Me
+      </a>
+    </div>
+  </header>
 
   <main class="container flex-grow-1">
 
-    <h2>学歴</h2>
-    <ul class="list-group">
-      <li class="list-group-item">
-        東京都立杉並高等学校 [2019/04～2022/03]
-      </li>
-      <li class="list-group-item">
-        法政大学 情報科学部 ディジタルメディア学科 [2022/04～2026/03]
-      </li>
-      <li class="list-group-item">
-        法政大学大学院 情報科学研究科 [2026/04～2028/03 見込]
-      </li>
-    </ul>
+    <section class="section-block">
+      <h2 class="section-title">自己紹介</h2>
+      <div class="card soft-card">
+        <div class="card-body">
+          <p class="mb-2">
+            法政大学 情報科学部 ディジタルメディア学科に所属し、裸眼3Dディスプレイを用いた
+            バレーボール観戦映像の視認性向上に関する研究に取り組んでいます。
+          </p>
+          <p class="mb-0">
+            研究活動に加え、ゲーム制作やWeb制作にも取り組んでおり、
+            技術だけでなく「見やすい」「楽しい」「伝わりやすい」体験を形にすることに興味があります。
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <br />
+    <section class="section-block">
+      <h2 class="section-title">趣味・関心</h2>
+      <div class="card soft-card">
+        <div class="card-body">
+          <span class="badge bg-primary badge-custom">バレーボール</span>
+          <span class="badge bg-success badge-custom">ゲーム制作</span>
+          <span class="badge bg-dark badge-custom">3D映像</span>
+          <span class="badge bg-secondary badge-custom">音声・画像処理</span>
+          <span class="badge bg-info text-dark badge-custom">インタラクティブ体験</span>
 
-    <h2>保有資格</h2>
-    <ul class="list-group">
-      <li class="list-group-item">
-        TOEIC 605 点 (Listening: 310, Reading: 295) 取得年月: 2024/10
-      </li>
-      <li class="list-group-item">
-        普通自動車第一種運転免許AT限定 取得年月: 2022/05
-      </li>
-    </ul>
+          <p class="mt-3 mb-0">
+            バレーボールは中学から継続しており、競技経験と研究テーマの両面から強い関心があります。
+            また、ゲームや映像、ライブ・エンタメのような、人を惹きつける体験設計にも興味があります。
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <br />
+    <section class="section-block">
+      <h2 class="section-title">学歴</h2>
+      <ul class="list-group soft-card">
+        <li class="list-group-item">
+          東京都立杉並高等学校 [2019/04～2022/03]
+        </li>
+        <li class="list-group-item">
+          法政大学 情報科学部 ディジタルメディア学科 [2022/04～2026/03]
+        </li>
+        <li class="list-group-item">
+          法政大学大学院 情報科学研究科 [2026/04～2028/03 見込]
+        </li>
+      </ul>
+    </section>
 
-    <h2>学会・活動実績</h2>
-    <ul class="list-group">
-      <li class="list-group-item">
-        バレーボール部に所属し，中学から現在まで活動継続中．大学2年時に関東理工系大学リーグ2部から1部への昇格に貢献．</br>
-        3年時には1部リーグの全ての試合に出場し，優勝を2度達成．
-      </li>
-      <li class="list-group-item">
-        裸眼3Dディスプレイを用いたバレーボール観戦映像の視認性向上に関する研究に取り組む．
-        大学はGPA 3.34で卒業し，優秀学生賞を受賞
-      </li>
-      <li class="list-group-item">
-       2025.10 立体メディア技術研究会にて発表．学生奨励賞を受賞．
-      </li>
-      <li class="list-group-item">
-       2026.3 サイバースペースと仮想都市研究会にて発表．
-      </li>
-    </ul>
+    <section class="section-block">
+      <h2 class="section-title">保有資格</h2>
+      <ul class="list-group soft-card">
+        <li class="list-group-item">
+          TOEIC 605 点 (Listening: 310, Reading: 295) 取得年月: 2024/10
+        </li>
+        <li class="list-group-item">
+          普通自動車第一種運転免許 AT限定 取得年月: 2022/05
+        </li>
+      </ul>
+    </section>
 
-    <hr />
+    <section class="section-block">
+      <h2 class="section-title">学会・活動実績</h2>
+      <ul class="list-group soft-card">
+        <li class="list-group-item">
+          バレーボール部に所属し、中学から現在まで活動継続中。大学2年時に関東理工系大学リーグ2部から1部への昇格に貢献。
+          3年時には1部リーグの全試合に出場し、優勝を2度達成。
+        </li>
+        <li class="list-group-item">
+          裸眼3Dディスプレイを用いたバレーボール観戦映像の視認性向上に関する研究に取り組む。
+          GPA 3.34で卒業し、優秀学生賞を受賞。
+        </li>
+        <li class="list-group-item">
+          2025.10 立体メディア技術研究会にて発表。学生奨励賞を受賞。
+        </li>
+        <li class="list-group-item">
+          2026.3 サイバースペースと仮想都市研究会にて発表。
+        </li>
+      </ul>
+    </section>
 
-    <h2>成果物</h2>
-    <div class="row g-4">
+    <section class="section-block">
+      <h2 class="section-title">成果物</h2>
+      <div class="row g-4">
 
-      <!-- 作品1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100">
-          <img src="./thumbnail.gif" class="card-img-top" alt="返せ！宗教勧誘のサムネイル" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">返せ！宗教勧誘</h5>
+        <div class="col-md-6 col-lg-3">
+          <div class="card portfolio-card">
+            <img src="./thumbnail.gif" class="card-img-top" alt="返せ！宗教勧誘のサムネイル" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">返せ！宗教勧誘</h5>
+              <p class="text-muted small">Unity1Week 参加作品</p>
 
-            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
-              data-bs-target="#detail-religion" aria-expanded="false" aria-controls="detail-religion">
-              詳細
-            </button>
+              <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#detail-religion" aria-expanded="false" aria-controls="detail-religion">
+                詳細を見る
+              </button>
 
-            <div class="collapse mt-3" id="detail-religion">
-              <div class="card card-body">
-                <p>
-                  大学3年生の時に参加した Unity1Week テーマ「かえす」にて制作したゲームです。<br>
-                  次々にやってくる宗教勧誘のおばさんを殴って土に「かえす」ゲームです。<br>
-                  友人と共同制作し、主に企画、ルール作り、ゲームシステムの開発を担当しました。<br>
-                  この制作を通して、チーム開発の流れや Git の使用法、C# コーディングを身につけました。<br>
-                  コンペ終了後の評価期間では人気のゲームに選ばれ、現在では総プレイヤー数は約2万人を達成し、
-                  実況動画も複数本投稿されています。
-                </p>
-                <p class="mb-0">
-                  <a href="https://unityroom.com/games/return-solitication" target="_blank" rel="noopener noreferrer">
-                    プレイはこちら
-                  </a>
-                </p>
+              <div class="collapse" id="detail-religion">
+                <div class="inner-detail">
+                  <p>
+                    大学3年生の時に参加した Unity1Week テーマ「かえす」にて制作したゲームです。<br>
+                    次々にやってくる宗教勧誘のおばさんを殴って土に「かえす」ゲームです。<br>
+                    友人と共同制作し、主に企画、ルール作り、ゲームシステムの開発を担当しました。<br>
+                    この制作を通して、チーム開発の流れや Git の使用法、C# コーディングを身につけました。<br>
+                    コンペ終了後の評価期間では人気のゲームに選ばれ、現在では総プレイヤー数は約2万人を達成し、
+                    実況動画も複数本投稿されています。
+                  </p>
+                  <p class="mb-0">
+                    <a href="https://unityroom.com/games/return-solitication" target="_blank"
+                      rel="noopener noreferrer">
+                      プレイはこちら
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- 作品2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100">
-          <img src="./catwalk_title.gif" class="card-img-top" alt="catwalkのサムネイル" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">catwalk</h5>
+        <div class="col-md-6 col-lg-3">
+          <div class="card portfolio-card">
+            <img src="./catwalk_title.gif" class="card-img-top" alt="catwalkのサムネイル" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">catwalk</h5>
+              <p class="text-muted small">Unity1Week 参加作品</p>
 
-            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
-              data-bs-target="#detail-catwalk" aria-expanded="false" aria-controls="detail-catwalk">
-              詳細
-            </button>
+              <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#detail-catwalk" aria-expanded="false" aria-controls="detail-catwalk">
+                詳細を見る
+              </button>
 
-            <div class="collapse mt-3" id="detail-catwalk">
-              <div class="card card-body">
-                <p>
-                  大学3年生の時に参加した Unity1Week テーマ「ない」にて制作したゲームです。<br>
-                  色がなくなってしまった世界で、猫が色を取り戻すために冒険をするアクションゲームで、
-                  試行数と記憶力が鍵になります。<br>
-                  こちらもコンペ終了時に人気のゲームに選ばれました。
-                </p>
-                <p class="mb-0">
-                  <a href="https://unityroom.com/games/cat-walk" target="_blank" rel="noopener noreferrer">
-                    プレイはこちら
-                  </a>
-                </p>
+              <div class="collapse" id="detail-catwalk">
+                <div class="inner-detail">
+                  <p>
+                    大学3年生の時に参加した Unity1Week テーマ「ない」にて制作したゲームです。<br>
+                    色がなくなってしまった世界で、猫が色を取り戻すために冒険をするアクションゲームで、
+                    試行数と記憶力が鍵になります。<br>
+                    こちらもコンペ終了時に人気のゲームに選ばれました。
+                  </p>
+                  <p class="mb-0">
+                    <a href="https://unityroom.com/games/cat-walk" target="_blank" rel="noopener noreferrer">
+                      プレイはこちら
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- 作品3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100">
-          <img src="./book_search.png" class="card-img-top" alt="書籍検索ページのサムネイル" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Open Library APIを使用した書籍検索ページ</h5>
+        <div class="col-md-6 col-lg-3">
+          <div class="card portfolio-card">
+            <img src="./book_search.png" class="card-img-top" alt="書籍検索ページのサムネイル" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Open Library APIを使用した書籍検索ページ</h5>
+              <p class="text-muted small">Web制作 / API連携</p>
 
-            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
-              data-bs-target="#detail-book" aria-expanded="false" aria-controls="detail-book">
-              詳細
-            </button>
+              <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#detail-book" aria-expanded="false" aria-controls="detail-book">
+                詳細を見る
+              </button>
 
-            <div class="collapse mt-3" id="detail-book">
-              <div class="card card-body">
-                <p class="mb-0">
-                  Open Library API を用いて書籍検索ができる Web ページを作成しました。<br>
-                  API から取得したデータを画面に表示し、検索機能を実装しています。<br>
-                  また SQL を利用し、検索履歴の機能も実装しました。
-                </p>
+              <div class="collapse" id="detail-book">
+                <div class="inner-detail">
+                  <p class="mb-0">
+                    Open Library API を用いて書籍検索ができる Web ページを作成しました。<br>
+                    API から取得したデータを画面に表示し、検索機能を実装しています。<br>
+                    また SQL を利用し、検索履歴の機能も実装しました。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- 作品4 卒業論文 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100">
-          <img src="./GT.png" class="card-img-top" alt="卒業論文のサムネイル" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">卒業論文</h5>
+        <div class="col-md-6 col-lg-3">
+          <div class="card portfolio-card">
+            <img src="./GT.png" class="card-img-top" alt="卒業論文のサムネイル" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">卒業論文</h5>
+              <p class="text-muted small">研究 / 3Dディスプレイ</p>
 
-            <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
-              data-bs-target="#detail-thesis" aria-expanded="false" aria-controls="detail-thesis">
-              詳細
-            </button>
+              <button class="btn btn-primary mt-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#detail-thesis" aria-expanded="false" aria-controls="detail-thesis">
+                詳細を見る
+              </button>
 
-            <div class="collapse mt-3" id="detail-thesis">
-              <div class="card card-body">
-                <p>
-                  <strong>タイトル</strong><br>
-                  バレーボールの立体映像観戦における視差最適化
-                </p>
-                <p>
-                  <strong>概要</strong><br>
-                    著者は,裸眼 3D ディスプレイにおけるバレーボール観戦映像の視差最適化手法を提案
-                    する.バレーボールの観戦映像は,試合全体を把握するためにコートを俯瞰する構図で撮影
-                    されることが多く,奥行き方向のボールの動きが視認しにくい.そこで,裸眼 3D ディスプ
-                    レイを用いた立体視による視認性向上を検討する.従来の撮影法では,撮影時に瞳孔間距離
-                    に相当する基線長を用いるため,視差が小さく,十分な立体感が得られにくい.本研究では,
-                    撮影段階において十分な視差を確保するため,眼間距離よりも長い長基線長を設定する.さ
-                    らに提示段階では,快適性向上を目的として,顕著性マップに基づく注視点推定と水平シフ
-                    トを用い,注視点付近の視差を抑制する.これにより,立体感を維持しながら快適性の向上
-                    を実現する.提案手法の有効性については,視差角の分布,最大視差角,および時間変化に
-                    基づく定量評価と,視認性および臨場感に関する主観評価実験により検証した.その結果,
-                    本手法がバレーボール観戦映像において,奥行き方向の動きの視認性を向上させるととも
-                    に,快適な立体視を実現できることを示した.
-                </p>
-                <p class="mb-0">
-                  <a href="https://drive.google.com/file/d/1NGFdJgu8mJce0gEvOBoPmHKUx7LsNW_5/view?usp=drive_link"
-                    target="_blank" rel="noopener noreferrer">
-                    論文を見る
-                  </a>
-                </p>
+              <div class="collapse" id="detail-thesis">
+                <div class="inner-detail">
+                  <p>
+                    <strong>タイトル</strong><br>
+                    バレーボールの立体映像観戦における視差最適化
+                  </p>
+                  <p>
+                    <strong>概要</strong><br>
+                    著者は、裸眼3Dディスプレイにおけるバレーボール観戦映像の視差最適化手法を提案する。
+                    バレーボールの観戦映像は、試合全体を把握するためにコートを俯瞰する構図で撮影されることが多く、
+                    奥行き方向のボールの動きが視認しにくい。そこで、裸眼3Dディスプレイを用いた立体視による
+                    視認性向上を検討する。従来の撮影法では撮影時に瞳孔間距離に相当する基線長を用いるため、
+                    視差が小さく十分な立体感が得られにくい。本研究では、撮影段階において十分な視差を確保するため、
+                    眼間距離よりも長い長基線長を設定する。さらに提示段階では、快適性向上を目的として、
+                    顕著性マップに基づく注視点推定と水平シフトを用い、注視点付近の視差を抑制する。
+                    これにより、立体感を維持しながら快適性の向上を実現する。提案手法の有効性については、
+                    視差角の分布、最大視差角、および時間変化に基づく定量評価と、
+                    視認性および臨場感に関する主観評価実験により検証した。
+                  </p>
+                  <p class="mb-0">
+                    <a href="https://drive.google.com/file/d/1NGFdJgu8mJce0gEvOBoPmHKUx7LsNW_5/view?usp=drive_link"
+                      target="_blank" rel="noopener noreferrer">
+                      論文を見る
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer mt-5 py-3 bg-light">
+  <footer class="py-3 bg-light border-top">
     <div class="container">
-      <p class="text-muted mb-0">
-        最終更新日:
-        <span id="lastUpdatedDate"></span>
+      <p class="text-muted mb-0 text-center">
+        最終更新日: <span id="lastUpdatedDate"></span>
       </p>
     </div>
   </footer>
